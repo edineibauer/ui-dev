@@ -1,0 +1,17 @@
+{
+    "name": "conn/ui-dev",
+    "description": "Interface de Usuário para gestão e desenvolvimento do sistema.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Edinei J. Bauer",
+            "email": "edineibauer@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "conn/dashboard": "^2.1",
+        "ext-json": "*"
+    }
+}
