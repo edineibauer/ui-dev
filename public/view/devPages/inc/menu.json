@@ -1,0 +1,44 @@
+[
+  {
+    "icon": "accessibility",
+    "title": "Gerenciar Entidades",
+    "action": "link",
+    "lib": "ui-dev",
+    "file": "UIEntidades"
+  },
+  {
+    "icon": "format_paint",
+    "title": "Tema",
+    "action": "page",
+    "lib": "ui-dev",
+    "file": "devPages/tema"
+  },
+  {
+    "icon": "settings",
+    "title": "Configurações",
+    "action": "page",
+    "lib": "ui-dev",
+    "file": "devPages/configuracoes"
+  },
+  {
+    "icon": "settings_input_component",
+    "title": "Integrações",
+    "action": "page",
+    "lib": "ui-dev",
+    "file": "devPages/integracoes"
+  },
+  {
+    "icon": "settings_ethernet",
+    "title": "Desenvolvimento",
+    "action": "page",
+    "lib": "ui-dev",
+    "file": "devPages/desenvolvimento"
+  },
+  {
+    "icon": "block",
+    "title": "Permissões",
+    "action": "page",
+    "lib": "ui-dev",
+    "file": "devPages/permissoes"
+  }
+]
