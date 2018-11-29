@@ -1,5 +1,5 @@
 <?php
-$tpl = new \Helpers\Template("dashboard");
+$tpl = new \Helpers\Template("ui-dev");
 $integ = [
     'integration' => [],
     'home' => HOME,

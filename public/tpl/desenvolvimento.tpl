@@ -67,4 +67,4 @@
 </section>
 *}
 
-<script src="{$home}{$vendor}dashboard/public/assets/desenvolvimento.js?v={$version}"></script>
+<script src="{$home}{$vendor}ui-dev/public/assets/desenvolvimento.js?v={$version}"></script>

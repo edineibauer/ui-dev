@@ -8,19 +8,19 @@ $(function () {
         });
         if (!change) {
             change = !0;
-            post('dashboard', 'settings/route', {route: routeNew}, function () {
+            post('ui-dev', 'settings/route', {route: routeNew}, function () {
                 change = !1
             })
         }
     });
     $("#reautorar").off("click").on("click", function () {
-        post("dashboard", "settings/autor", {autor: $("#selectReautor").val()}, function (g) {
+        post("ui-dev", "settings/autor", {autor: $("#selectReautor").val()}, function (g) {
             toast("Salvo")
         })
     });
     $("#envelopar-lib").off("click").on("click", function () {
         toast("Envelopando...", 3000);
-        post("dashboard", "settings/enveloparBiblioteca", {}, function (g) {
+        post("ui-dev", "settings/enveloparBiblioteca", {}, function (g) {
             if (g === "1") {
                 toast("Tudo Pronto!", 2000, "toast-success")
             } else {
@@ -30,7 +30,7 @@ $(function () {
     });
     $("#clear-cache").off("click").on("click", function () {
         toast("Atualizando Sistema...", 3000);
-        post("dashboard", "cache/update", {}, function () {
+        post("ui-dev", "cache/update", {}, function () {
             toast("Recarregando Arquivos...", 4000);
             setTimeout(function () {
                 location.reload()
@@ -39,7 +39,7 @@ $(function () {
     });
     $("#clear-global").off("click").on("click", function () {
         toast("Atualizando Assets", 2000);
-        post("dashboard", "cache/global", {}, function (g) {
+        post("ui-dev", "cache/global", {}, function (g) {
             toast("Recarregando Assets...", 4000);
             setTimeout(function () {
                 location.reload()

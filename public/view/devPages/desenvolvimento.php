@@ -1,6 +1,6 @@
 <?php
 
-$tpl = new \Helpers\Template("dashboard");
+$tpl = new \Helpers\Template("ui-dev");
 $read = new \ConnCrud\Read();
 
 $routesAll = [DOMINIO];
@@ -14,12 +14,12 @@ foreach ($routesAll as $item) {
         "item" => $item,
         "nome" => ucwords(str_replace(["_", "-", "  "], [" ", " ", " "], $item)),
         "value" => in_array($item, $dados['routes']),
-        "disable" => in_array($item, ["session-control", "dashboard", "link-control", "entity-form"])
+        "disable" => in_array($item, ["session-control", "ui-dev", "dashboard", "link-control", "entity-form"])
     ];
     $dados['routesAll'] .= $tpl->getShow("checkbox", $dataRoute);
 }
 
-$dados['dominio'] = VENDOR . "dashboard/";
+$dados['dominio'] = VENDOR . "ui-dev/";
 $dados['version'] = VERSION;
 
 
@@ -31,5 +31,5 @@ if ($read->getResult()) {
         $dados['reautor'] .= "<option value='{$log['id']}'>{$log['nome']}</option>";
 }
 
-$tpl = new \Helpers\Template("dashboard");
+$tpl = new \Helpers\Template("ui-dev");
 $data['data'] = $tpl->getShow("desenvolvimento", $dados);

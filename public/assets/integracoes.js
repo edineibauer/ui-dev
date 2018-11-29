@@ -1,5 +1,5 @@
 function saveConfig(field, value) {
-    post("dashboard", "settings/saveConfig", {field: field, value: value}, function (g) {
+    post("ui-dev", "settings/saveConfig", {field: field, value: value}, function (g) {
         if (g)
             toast("erro", 3000, "toast-warning")
     })

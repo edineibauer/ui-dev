@@ -1,5 +1,5 @@
 <?php
-$tpl = new \Helpers\Template("dashboard");
+$tpl = new \Helpers\Template("ui-dev");
 $read = new \ConnCrud\Read();
 
 //Garante criação dos dados de configuração caso não exista

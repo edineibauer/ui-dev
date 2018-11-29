@@ -2,7 +2,7 @@
 
 use \Config\Config;
 
-$dados['dominio'] = VENDOR . "dashboard/public/";
+$dados['dominio'] = VENDOR . "ui-dev/public/";
 $dados['version'] = VERSION;
 
 $menuNotShow = [];
@@ -13,7 +13,7 @@ $setorAllow = [];
 if (file_exists(PATH_HOME . "public/entity/-entity.json"))
     $setorAllow = json_decode(file_get_contents(PATH_HOME . "public/entity/-entity.json"), true);
 
-$tpl = new \Helpers\Template("dashboard");
+$tpl = new \Helpers\Template("ui-dev");
 $dic = new \Entity\Dicionario("usuarios");
 $allow = $dic->search('column', 'setor')->getAllow();
 $allow['values'] = array_merge(["0"], $allow['values']);

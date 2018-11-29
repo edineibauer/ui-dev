@@ -3,9 +3,9 @@
 if (empty($_SESSION['userlogin'])) {
     $data['response'] = 3;
     $data['data'] = HOME . "login";
-//} elseif($_SESSION['userlogin']['setor'] !== "1") {
-//    $data['response'] = 3;
-//    $data['data'] = HOME . "logout";
+} elseif($_SESSION['userlogin']['setor'] !== "1") {
+    $data['response'] = 3;
+    $data['data'] = HOME . "logout";
 } else {
     ob_start();
     ?>
